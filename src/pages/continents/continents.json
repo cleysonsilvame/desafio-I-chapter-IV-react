@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "asia",
+    "name": "Ásia",
+    "description": "A Ásia é o maior continente, tanto em área (chega a quase um terço de todas as terras emersas do nosso planeta) como em população, onde habitam aproximadamente 4,5 bilhões de habitantes.",
+    "bannerImage": "https://source.unsplash.com/WHhbYArwFt8",
+    "numberOfCountries": 51,
+    "numberOfLanguages": 2300,
+    "amountMostPopularCities": 50,
+    "mostPopularCities": [
+      {
+        "cityName": "Hong Kong",
+        "countryName": "China",
+        "countryCode": "CN",
+        "cityImage": "https://source.unsplash.com/JVCozvGeKNs"
+      },
+      {
+        "cityName": "Bangkok",
+        "countryName": "Tailândia",
+        "countryCode": "TH",
+        "cityImage": "https://source.unsplash.com/Wo0K--ktL_M"
+      },
+      {
+        "cityName": "Macau",
+        "countryName": "China",
+        "countryCode": "CN",
+        "cityImage": "https://source.unsplash.com/2AUg3F3SmLI"
+      },
+      {
+        "cityName": "Dubai",
+        "countryName": "Emirados Árabes Unidos",
+        "countryCode": "AE",
+        "cityImage": "https://source.unsplash.com/VbDjv8-8ibc"
+      },
+      {
+        "cityName": "Kuala Lumpur",
+        "countryName": "Malásia",
+        "countryCode": "MY",
+        "cityImage": "https://source.unsplash.com/NecP3sIvRX8"
+      },
+      {
+        "cityName": "Delhi",
+        "countryName": "Índia",
+        "countryCode": "IN",
+        "cityImage": "https://source.unsplash.com/LLK0mYl-lu0"
+      }
+    ]
+  },
+  {
+    "slug": "europa",
+    "name": "Europa",
+    "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+    "bannerImage": "https://source.unsplash.com/EXdXLrZXS9Q",
+    "numberOfCountries": 50,
+    "numberOfLanguages": 24,
+    "amountMostPopularCities": 30,
+    "mostPopularCities": [
+      {
+        "cityName": "Londres",
+        "countryName": "Reino Unido",
+        "countryCode": "GB",
+        "cityImage": "https://source.unsplash.com/Ab9vQBR6f8E"
+      },
+      {
+        "cityName": "Paris",
+        "countryName": "França",
+        "countryCode": "FR",
+        "cityImage": "https://source.unsplash.com/NT1mJPgni6A"
+      },
+      {
+        "cityName": "Roma",
+        "countryName": "Itália",
+        "countryCode": "IT",
+        "cityImage": "https://source.unsplash.com/hs9hfDfeC3Q"
+      },
+      {
+        "cityName": "Praga",
+        "countryName": "República Checa",
+        "countryCode": "CZ",
+        "cityImage": "https://source.unsplash.com/X8Vo9rGVPS8"
+      },
+      {
+        "cityName": "Barcelona",
+        "countryName": "Espanha",
+        "countryCode": "ES",
+        "cityImage": "https://source.unsplash.com/oJsRqwMHWHI"
+      },
+      {
+        "cityName": "Milão",
+        "countryName": "Itália",
+        "countryCode": "IT",
+        "cityImage": "https://source.unsplash.com/SKHcpqR8aEY"
+      }
+    ]
+  }
+]
