@@ -14,6 +14,7 @@ import ReactCountryFlag from "react-country-flag";
 import { Banner } from "../components/Banner";
 import { CityCard } from "../components/CityCard";
 import { Header } from "../components/Header";
+import { Info } from "../components/Info";
 import continents from "./continents.json";
 
 export default function Continent() {
@@ -29,55 +30,38 @@ export default function Continent() {
     <>
       <Header backTo="/" />
       <Banner imageURL={continent.bannerImage}>
-        <Flex h="100%" align="end" p="4" maxW="1160px" w="100%" mx="auto">
-          <Heading color="gray.100" fontWeight={600} size="3xl">
+        <Flex
+          h="100%"
+          align={["center", "center", "end"]}
+          justify={["center", "center", "start"]}
+          p="4"
+          maxW="1160px"
+          w="100%"
+          mx="auto"
+        >
+          <Heading color="gray.100" fontWeight={600} size={["xl", "xl", "3xl"]}>
             {continent.name}
           </Heading>
         </Flex>
       </Banner>
 
       <Box as="main" p="4" maxW="1160px" w="100%" mx="auto" mb="20">
-        <Grid gap="4rem" gridTemplateColumns="1.4fr 1fr" my="20">
-          <Text fontSize="24" textAlign="justify">
+        <Grid
+          gap={["1rem", "1rem", "4rem"]}
+          gridTemplateColumns={["1fr", "1fr", "1.4fr 1fr"]}
+          my={["0", "0", "20"]}
+          mb={["8", "8", "0"]}
+        >
+          <Text fontSize={["sm", "sm", "24"]} textAlign="justify">
             {continent.description}
           </Text>
-          <HStack justify="space-between">
-            <Text
-              display="flex"
-              flexDir="column"
-              fontWeight={600}
-              fontSize="24"
-              align="center"
-            >
-              <Text as="span" color="yellow.400" fontSize="5xl">
-                {continent.numberOfCountries}
-              </Text>
-              países
-            </Text>
-            <Text
-              display="flex"
-              flexDir="column"
-              fontWeight={600}
-              fontSize="24"
-              align="center"
-            >
-              <Text as="span" color="yellow.400" fontSize="5xl">
-                {continent.numberOfLanguages}
-              </Text>
-              linguas
-            </Text>
-            <Text
-              display="flex"
-              flexDir="column"
-              fontWeight={600}
-              fontSize="24"
-              align="center"
-            >
-              <Text as="span" color="yellow.400" fontSize="5xl">
-                {continent.amountMostPopularCities}
-              </Text>
-              cidades +100
-            </Text>
+          <HStack justify={["space-between", "space-around", "space-between"]}>
+            <Info value={continent.numberOfCountries} description="países" />
+            <Info value={continent.numberOfLanguages} description="linguas" />
+            <Info
+              value={continent.amountMostPopularCities}
+              description="cidades +100"
+            />
           </HStack>
         </Grid>
 
@@ -90,12 +74,13 @@ export default function Continent() {
           Cidades +100
         </Heading>
 
-        <SimpleGrid minChildWidth='256px' spacing="8" mt="10">
+        <SimpleGrid
+          minChildWidth="256px"
+          spacing={["6", "6", "8"]}
+          mt={["4", "4", "10"]}
+        >
           {continent.mostPopularCities.map(city => (
-            <CityCard
-              key={city.cityName}
-              city={city}
-            />
+            <CityCard key={city.cityName} city={city} />
           ))}
         </SimpleGrid>
       </Box>

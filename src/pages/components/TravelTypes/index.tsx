@@ -36,11 +36,13 @@ export function TravelTypes() {
     <Flex
       as="section"
       px="4"
-      my="20"
+      my={["10", "10", "20"]}
       maxW="1160px"
       w="100%"
       mx="auto"
-      justify="space-between"
+      justify={["center", "center", "space-between"]}
+      flexWrap="wrap"
+      gap={["6", "6", "8"]}
     >
       {travelTypes.map(travelType => (
         <TravelType key={travelType.src} {...travelType} />

@@ -16,13 +16,13 @@ export function Header({ backTo }: HeaderProps) {
               as="a"
               aria-label="Voltar"
               icon={<IoChevronBackOutline />}
-              size="lg"
-              mr={["0", "-6"]}
+              size={["md", "lg"]}
+              mr="-6"
             />
           </Link>
         )}
-        <Flex flex={1} justify="center">
-          <Image src="/logo.svg" alt="Logo World Trip" />
+        <Flex flex={1} justify="center" >
+          <Image src="/logo.svg" alt="Logo World Trip" w={["81px", "120px", "fit-content"]} />
         </Flex>
       </Flex>
     </Box>

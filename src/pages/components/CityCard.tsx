@@ -12,7 +12,7 @@ interface CityCardProps {
 
 export function CityCard({ city }: CityCardProps) {
   return (
-    <Box key={city.cityName} w="256px" borderRadius="4" overflow="hidden">
+    <Box key={city.cityName} w="256px" borderRadius="4" overflow="hidden" justifySelf="center">
       <Image
         src={city.cityImage}
         alt={`${city.cityName}, ${city.countryName}`}
@@ -31,7 +31,7 @@ export function CityCard({ city }: CityCardProps) {
         bg="white"
       >
         <Stack spacing={3}>
-          <Heading as="h3" fontSize="xl" fontWeight="600" >
+          <Heading as="h3" fontSize="xl" fontWeight="600" color="gray.700" >
             {city.cityName}
           </Heading>
           <Text color="gray.500" fontSize="md" fontWeight="500">

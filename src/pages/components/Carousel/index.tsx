@@ -5,7 +5,13 @@ import { Item } from "./Item";
 
 export function Carousel() {
   return (
-    <Flex px="4" my="20" maxW="1160px" w="100%" mx="auto">
+    <Flex
+      px={["0", "0", "4"]}
+      my={["10", "10", "20"]}
+      maxW="1160px"
+      w="100%"
+      mx="auto"
+    >
       <Swiper
         slidesPerView={1}
         pagination={{ clickable: true }}

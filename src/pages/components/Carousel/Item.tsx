@@ -21,7 +21,7 @@ export function Item({
         backgroundImage={`url("${backgroundImageURL}")`}
         backgroundSize="cover"
         backgroundPosition="center"
-        height="450px"
+        height={["250px", "250px", "450px"]}
         alignItems="center"
         justifyContent="center"
         _hover={{
@@ -29,10 +29,15 @@ export function Item({
         }}
       >
         <Box textAlign="center">
-          <Heading as="h4" color="gray.100" size="2xl">
+          <Heading as="h4" color="gray.100" size={["xl", "xl", "2xl"]}>
             {title}
           </Heading>
-          <Heading as="h5" color="gray.100" fontSize="24" mt="1rem">
+          <Heading
+            as="h5"
+            color="gray.100"
+            fontSize={["sm", "sm", "24"]}
+            mt={[0, 0, "1rem"]}
+          >
             {description}
           </Heading>
         </Box>
